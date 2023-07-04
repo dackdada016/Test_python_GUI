@@ -18,7 +18,7 @@ def next_step():
 if __name__ == "__main__":
     # 创建主窗口
     root = tk.Tk()
-    root.title("模型分析應用程式")
+    root.title("應用程式")
 
     window_width = 400
     window_height = 300
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     root.config(bg="#9393FF")
 
     # 创建应用程序介绍文本，设置背景色为蓝绿色
-    introduction_label = tk.Label(root, text="這個應用程式為執行模型分析", bg="#00FFFF")
+    introduction_label = tk.Label(root, text="這個應用程式為______", bg="#00FFFF")
     introduction_label.pack(pady=10)
 
     # 创建选择目录按钮
