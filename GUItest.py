@@ -11,12 +11,12 @@ def select_directory():
         next_button.config(state=tk.DISABLED)
 
 def next_step():
-    introduction_label.config(text="請選擇EXCEL檔案", bg="#9393FF")  # 设置背景色为蓝绿色
+    introduction_label.config(text="請選擇EXCEL檔案", bg="#9393FF")  # 設置背景顏色
     select_directory_button.config(text="選擇EXCEL檔案", command=select_excel_file)
     selected_directory_label.config(text="")
 
 if __name__ == "__main__":
-    # 创建主窗口
+    # 建立主要視窗
     root = tk.Tk()
     root.title("應用程式")
 
@@ -31,24 +31,24 @@ if __name__ == "__main__":
 
 
 
-    # 设置主窗口背景色为蓝绿色
+    # 設置主要視窗顏色背景
     root.config(bg="#9393FF")
 
-    # 创建应用程序介绍文本，设置背景色为蓝绿色
+    # 建立應用程式label
     introduction_label = tk.Label(root, text="這個應用程式為______", bg="#00FFFF")
     introduction_label.pack(pady=10)
 
-    # 创建选择目录按钮
+    # 建立目錄選擇按鈕
     select_directory_button = tk.Button(root, text="選擇目錄", command=select_directory)
     select_directory_button.pack()
 
-    # 创建显示选中目录的标签
+    # 顯示狀態
     selected_directory_label = tk.Label(root, text="尚未選擇目錄")
     selected_directory_label.pack(pady=10)
 
-    # 创建下一步按钮
+    # 選擇檔案後替換按鈕
     next_button = tk.Button(root, text="下一步", command=next_step, state=tk.DISABLED)
     next_button.pack(pady=10)
 
-    # 启动主事件循环
+    # 啟動事件循環
     root.mainloop()
